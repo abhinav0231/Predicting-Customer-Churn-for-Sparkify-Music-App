@@ -2,7 +2,7 @@
 
 ### 1. Project Summary
 
-This project is to predict customer churn on a fictional music streaming service Sparkify. The project utilizes Spark SQL and Spark Dataframes to manipulate a large dataset, Spark MLlib to build and tune machine learning models on IBM watson studio. This is Capstone project for Udacity Data Science Nanodegree. A detailed walk-through of the project can be found in a separate article..
+This project is to predict customer churn on a fictional music streaming service Sparkify. The project utilizes Spark SQL and Spark Dataframes to manipulate a large dataset, Spark MLlib to build and tune machine learning models on IBM watson studio. This is Capstone project for Udacity Data Science Nanodegree. A detailed walk-through of the project can be found in a separate article here https://medium.com/@abhinav.sharma023/predicting-customer-churn-9c6a54071a99
 
 ### 2. Project Components
 
