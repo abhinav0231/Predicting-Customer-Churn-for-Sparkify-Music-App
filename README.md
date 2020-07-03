@@ -1,72 +1,48 @@
 # Predicting-Customer-Churn-for-Sparkify-Music-App
 
-### 1. Project Summary
+### >  Summary
 
-This project is to predict customer churn on a fictional music streaming service Sparkify. The project utilizes Spark SQL and Spark Dataframes to manipulate a large dataset, Spark MLlib to build and tune machine learning models on IBM watson studio. This is Capstone project for Udacity Data Science Nanodegree. A detailed walk-through of the project can be found in a separate article here https://medium.com/@abhinav.sharma023/predicting-customer-churn-9c6a54071a99
-
-### 2. Project Components
-
-Jupyter Notebook 'Sparkify.ipynb' includes the following steps.
-
-#### 2.1. Load and Clean Data set
-
-Load the data set using Spark. Clean invalid or missing data, such as records without userids or sessionids.
-
-#### 2.2. Exploratory Data Analysis
-
-Data analysis and visualization to explore relationships between customer churn and other variables.
-
-#### 2.3. Wrangling and Extracting\creating Valuable features
-
-Based on the exploratory data analysis, the following features are generated:
-
-$ tenure: The number of days between the last visited day and registration day
-$ state: The name of state from the location variable
-$ browser: Browser information retrieved from userAgent
-$ os: Operating system information retrieved from userAgent
-$ device: Device information retrieved from userAgent
-$ num_songs: The number of songs the user listened to
-$ num_artists: The number of artists the user listened to
-$ avg_length: The average length of songs the user listened to
-
-Several boolean variables indicating page visits to 'Roll Avert', 'Submit Downgrade', 'Submit Upgrade', 'Thumbs Down', 'Add Friend', and 'Add to Playlist'
+This prject is part of the Data Science Capstone Project. Any project can be chosen by the student, but here we are going to work on the project that is provided by Udacity itself. This is to Predict based on a Imaginative Company dataset(Sparkify) which is a Digital Music Streeming company, We are using the medium sized dataset that is around 231 mb in size. We are going to use Spark to Do our analysis and the main objective is to Analysis and create a Model to indentify Customers likely to Churn and leave the platform. IBM Watson Sudio will be used and within it wll use the Python3.6 with Spark environment notebook to carry out the analysis. We learn how to use Spark MLlib to build machine learning models with large datasets, far beyond what could be done with non-distributed technologies like scikit-learn. The blog post for the work done here can be found in the following medium link to the blog.
+https://medium.com/@abhinav.sharma023/predicting-customer-churn-9c6a54071a99
 
 
-#### 2.4. Modeling
+
+### > Installation and Library\Tools Used
+
+           > Pyspark
+           > Spark
+           > Pandas
+           > Skitlearn
+           > Matplotlib
+           > Numpy
+           
+  ####    Tools-
+           > Spark
+           > Python
+           > IBM Watson Studio
+
+Note - If running on Python 3 Jupyter notebook, please do ! pip install spark
 
 
-##### 2.4.1. Train-Test split
+### > Project Workflow
 
-The full data set is split into train and test data with 80:20 ratio
-
-
-##### 2.4.2. Transform categorical variables into numeric variables
-
-Since machine learning models normally require numerical input, StringIndexer and OneHotEconderEstimator are used to convert categorical variables into numeric variables.
-
-
-##### 2.4.3. Scaling numeric variables
-
-Numeric variables are scaled using StandardScaler.
+           > Loading the data as Spark datafram
+           > Getting the Spark session up and running 
+           > Loading the dataset
+           > Performing desctiptive analysis
+           > Cleaning the data
+           > Performing EDA
+           > Performing Feature Engineering to create and extract out most informative data
+           > Modeling
+           > Evaluation
 
 
-##### 2.4.4. Building pipelines
 
-Building three machine learning pipelines utilizing Logistic Regression, Random Forest Classifier, and Gradient Boosted Tree Classifier.
+### > Evaluation
 
-
-##### 2.4.5. Model evaluation
-
-Since we have an imbalanced data set, with 22% churn rate, AUC (Area Under the Curve) is used in addition to the Accuracy for evaluation. Gradient Boosted Tree Classifier show the best performance, showing 96% Accuracy and AUC of 0.99 with the default parameters.
+Accuracy and AUC Score is used as the Evaluation matrix . Gradient Boosted Tree Classifier gives us the best result with 96% of Accuracy and AUC score of  .989 before Hyperparamter Tuning.
 
 
-##### 2.4.6. Hyper parameter tuning
+### > Acknowledgements
 
-For Gradient-boosted tree classifier, codes for hyper parameter tuning via cross-validation are included.
-
-
-### 3. Technologies and tools
-Python 3.6
-Spark 2.4
-IBM Watson studio
-Detailed information about libraries can be found in the beginning of the notebook
+Credit to Udacity for a very well structured course and Student guidence. Greatly Stuctured Notebooks to assist and guide students.
