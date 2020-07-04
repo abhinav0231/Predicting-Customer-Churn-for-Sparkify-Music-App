@@ -40,7 +40,12 @@ Note - If running on Python 3 Jupyter notebook, please do ! pip install spark
 
 ### > Evaluation
 
-Accuracy and AUC Score is used as the Evaluation matrix . Gradient Boosted Tree Classifier gives us the best result with 96% of Accuracy and AUC score of  .989 before Hyperparamter Tuning.
+Accuracy and AUC Score is used as the Evaluation matrix. AUC tells you your model performance, while addressing the issue of class imbalance. Since we have high class imbalace in out data as having vatio of around 78:22, hence AUC is the best evaluation matrx as it is insensitive to this imbalance and will capture the minority ckass very well. What the AUC does, is that it notifies you that you have several wrongly classified positives FP despite the fact that you have a high accuracy because of the dominant class, and therefore it would return a low score in this case.
+
+We created a lot of variables like that impact churn like downgrade, upgrade, addfriend, add to playlist, avg lenght etc. These all turn out to be very impactfull on the final result to predict to churn users. Most impactfull being Thumbs down given, avg of the time on the paltform, total songs. 
+
+Tree based models captures the variace in the data best and are very good at dealing with class imbalance hence not surprisingly Gradient Boosted Tree Classifier gives us the best result with 96% of Accuracy and AUC score of  .989 before Hyperparamter Tuning.
+
 
 
 ### > Acknowledgements
