@@ -53,12 +53,11 @@ Evaluation matrix before Hyperparamter tuning-
 
 
 
-
+![testimg](https://github.com/abhinav0231/Predicting-Customer-Churn-for-Sparkify-Music-App/blob/master/Untitled2.jpg)
 
 
 
  
-
 
 ### > Acknowledgements
 
