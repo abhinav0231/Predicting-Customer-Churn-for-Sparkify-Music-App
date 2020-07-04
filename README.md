@@ -46,6 +46,18 @@ We created a lot of variables like that impact churn like downgrade, upgrade, ad
 
 Tree based models captures the variace in the data best and are very good at dealing with class imbalance hence not surprisingly Gradient Boosted Tree Classifier gives us the best result with 96% of Accuracy and AUC score of  .989 before Hyperparamter Tuning.
 
+With Cross validation for Gradiant Boosted Tree we get maxDepth=5,maxbin=20 and MaxIter=10 as best hyperparameters and we get a improvement in accuracy to 98% and AUC score as before .99.
+
+Evaluation matrix before Hyperparamter tuning-
+
+    precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98    106055
+           1       1.00      0.82      0.90     25730
+
+   micro avg       0.97      0.97      0.97    131785
+   macro avg       0.98      0.91      0.94    131785
+weighted avg       0.97      0.97      0.96    131785
 
 
 ### > Acknowledgements
